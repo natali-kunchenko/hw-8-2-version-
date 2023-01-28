@@ -1,0 +1,121 @@
+.footer {
+    background-color: $color-background;
+    text-align: center;
+    
+    @media screen and (min-width: 768px) {
+        &-conteiner {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+    
+        &__inform {
+            margin: 0;
+        }
+    }
+    /* &__text {
+        margin: 0 auto;
+    } */
+    &__list {
+        margin: 28px 0 auto;
+    }
+    &__item + .footer__item {
+        margin-top: 12px;
+    }
+    &__adress {
+        color: $color-hero;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__contacts {
+        color: rgba(255, 255, 255, 0.6);
+        font-style: normal;
+        font-family: $font-roboto;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__contacts:hover {
+        color: $color-hover;
+    }
+    &__contacts:focus {
+        color: $color-hover;
+    }
+}
+.network-box {
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
+
+    &__title {
+        font-family: $font-roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+.sn--size {
+    margin-top: 20px;
+}
+
+/* .footer {
+    background-color: $color-background;
+    padding: 60px 0;
+    &__text {
+        display: flex;
+        align-items: baseline;
+    }
+    &__list {
+        display: flex;
+        margin-top: 28px;
+    }
+    &__item + .footer__item {
+        margin-top: 12px;
+    }
+    &__adress {
+        color: $color-hero;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__contacts {
+        color: rgba(255, 255, 255, 0.6);
+        font-style: normal;
+        font-family: $font-roboto;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__contacts:hover {
+        color: $color-hover;
+    }
+    &__contacts:focus {
+        color: $color-hover;
+    }
+}
+.network-box {
+    margin-left: 90.6px;
+    &__title {
+        font-family: $font-roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #fff;
+    }
+} */

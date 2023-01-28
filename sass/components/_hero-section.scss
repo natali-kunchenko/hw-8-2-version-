@@ -1,0 +1,140 @@
+.hero {
+    max-width: 480px;
+    min-height: 400px;
+    padding: 118px 30px;
+    margin: 0 auto;
+    background-color: $color-background;
+    background-size: cover;
+    background-position: center;
+    background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url('../images/hero-img-team-mobile.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url('../images/hero-img-team-mobile@2x.jpg');
+            }
+    }
+
+    @media screen and (min-width:577px) {
+        max-width: 768px;
+        padding: 118px 60px;
+        background-size: cover;
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('../images/hero-img-team-tablet.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                & {
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                                url('../images/hero-img-team-tablet@2x.jpg');
+                }
+            }
+    }
+
+    @media screen and (min-width:961px) {
+        max-width: 1600px;
+        min-height: 600px;
+        padding: 200px 0;
+        background-size: cover;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url('../images/hero-img-team.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                & {
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url('../images/hero-img-team@2x.jpg');
+                }
+            }
+    }
+
+
+    &__title {
+        color: $color-hero;
+        font-size: 26px;
+        line-height: 1.62;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        max-width: 360px;
+        margin: 0 auto 30px;
+    }
+    &__button {
+        display: block;
+        font-family: $font-roboto;
+        color: $color-hero;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        letter-spacing: 0.06em;
+        line-height: 1.87;
+        background-color: $color-hover;
+        padding: 10px 24px;
+        border-width: 0px ;
+        border-radius: 4px;
+        margin: 0 auto;
+    }
+    &__button:active {
+        background-color: $color-active;
+        width: 216px;
+    }
+}
+
+/* .hero {
+    max-width: 1600px;
+    padding: 200px 0px;/* 
+    margin: 0 auto;
+    background-color: $color-background;
+    background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-img-team.jpg);
+
+    &__title {
+        color: $color-hero;
+        font-size: 44px;
+        line-height: 1.36;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        max-width: 696px;
+        margin: 0 auto 30px;
+    }
+    &__button {
+        display: block;
+        font-family: $font-roboto;
+        color: $color-hero;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        letter-spacing: 0.06em;
+        line-height: 1.87;
+        background-color: $color-hover;
+        padding: 10px 24px;
+        border-width: 0px ;
+        border-radius: 4px;
+        margin: 0 auto;
+    }
+    &__button:active {
+        background-color: $color-active;
+        width: 216px;
+    }
+} */
